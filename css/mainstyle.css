@@ -1,0 +1,29 @@
+/* PALETA DE COLORES */
+:root {
+    --fondo: #000000;
+    --twitterblue: #1a8cd8;
+    --twittertextwhite: #e7e9ea;
+    --twittertextgray: #71767b;
+    --twitterborder: #2f3336;
+}
+
+/* * LOGIN */
+
+.login {
+    background-color: var(--fondo);
+}
+
+.contenido h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--twittertextwhite);
+    margin-bottom: 5rem;
+    font-weight: bolder;
+}
+
+.contenido h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--twittertextwhite);
+    font-weight: bold;
+}
+
+
