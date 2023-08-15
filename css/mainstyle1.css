@@ -1,9 +1,12 @@
-/* Estilos globales para todos los elementos */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    box-sizing: border-box;
+
+
+:root {
+    --fondo: #000000;
+    --twitterblue: #1a8cd8;
+    --twittertextwhite: #e7e9ea;
+    --twittertextgray: #71767b;
+    --twitterborder: #2f3336;
+    --twitterloginalt: #f8faff;
 }
 
 /* Estilos para el fondo del cuerpo de la página */
@@ -14,16 +17,18 @@ body {
 /* Estilos para el cuadro de inicio de sesión */
 .login-box {
     background: #000000;
-    padding: 30px 120px;
-    width: 570px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
-    border-radius: 10px;
+    width: 80%;
+    border-radius: 0.8rem;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
     transition: box-shadow 0.3s;
+}
+
+.label-inicio {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    text-align: start;
 }
 
 .login-box:hover {
@@ -115,7 +120,6 @@ body {
 /* Estilos para el botón con la clase "boton" en el cuadro de inicio de sesión */
 .boton {
     background: black;
-    border: 1px solid white;
     color: white;
 }
 
@@ -137,22 +141,28 @@ body {
 
 /* Estilo para el label en estado normal (blanco) */
 .custom-floating-label {
-    color: white; /* Color blanco */
-  }
+    color: var(--twittertextgray); /* Color blanco */
+}
   
   /* Estilo para el label al aplicar el floating label (celeste) */
-  .custom-floating-input:focus + .custom-floating-label,
-  .custom-floating-input:not(:placeholder-shown) + .custom-floating-label {
+.custom-floating-input:focus + .custom-floating-label,
+.custom-floating-input:not(:placeholder-shown) + .custom-floating-label {
     color: #0e4d77; /* Color celeste para el label */
-  }
+    font-weight: bolder;
+}
+
   
-  .btn{
+.btn{
     border: 1px solid white;
     color: white;
     background: transparent; /* Establecemos el fondo como transparente */
-  }
+}
   
-  .btn:hover {
+.btn:hover {
     background: #181919; /* Cambiamos el fondo en el hover a blanco */
     color: white;
-  }
+}
+
+.sign-up:hover {
+    text-decoration: underline;
+}
