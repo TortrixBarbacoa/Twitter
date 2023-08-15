@@ -11,23 +11,22 @@
 
     <!-- CSS y Bootstrap -->
     <link rel="stylesheet" href="css\mainstyle.css">
-    <link rel="stylesheet" href="css\normalize.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
- 
+    <script src="https://kit.fontawesome.com/87a0dc1d3c.js" crossorigin="anonymous"></script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <!-- * Login Twitter -->
-<body class="login container-fluid align-items-center">
+<body class="login container-fluid align-items-center pt-5">
     
     <!-- Contenedor Login -->
-    <div class="container-fluid text-center px-5 align-items-center">
+    <div class="container-fluid text-center px-5">
 
         <!-- Grid Elementos -->
         <div class="row align-items-center">
@@ -41,15 +40,120 @@
 
             <!-- Contenido Login (Derecha) -->
             <div class="col contenido mx-3">
-                <h1 class="text-start display-2">Happening now</h1>
-                <h2 class="text-start fs-2">Join today.</h2>
-                <div class="rounded-pill">
 
+                <!-- Título -->
+                <h1 class="text-start display-3">Happening now</h1>
+
+                <!-- Subtítulo -->
+                <h2 class="text-start fs-2 mb-4">Join today.</h2>
+
+                <div class="w-50">
+                    <!-- Iniciar Sesión con Google -->
+                    <div class="rounded-pill py-2 px-3 pt-3 my-3 login-alt align-items-center">
+                        <h3 class="fs-6"><img src="assets\google_logo.png" class="img-fluid logo-google" alt="logoGoogle">Sign up with Google</h3>
+                    </div>
+ 
+                    <!-- Iniciar Sesión con Apple -->
+                    <div class="rounded-pill py-2 px-3 pt-3 mt-3 mb-1 login-alt align-items-center">
+                        <h3 class="fs-6 ml-3"><i class="fa-brands fa-apple fs-4" style="color: #000000;"></i>Sign up with Apple</h3>
+                    </div>
+ 
+                    <!-- Divisor -->
+                    <div>
+                        <div class="row text-center align-items-center">
+                            <div class="col align-items-center">
+                                <hr>
+                            </div>
+                            <div class="col align-items-center">
+                                <h4 class="fs-4">or</h4>
+                            </div>
+                            <div class="col align-items-center">
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <!-- Crear Cuenta -->
+                    <div class="rounded-pill py-2 px-3 pt-3 mt-1 mb-1 login-twitter align-items-center">
+                        <h3 class="fs-6">Create account</h3>
+                    </div>
+
+                    <!-- Términos y Condiciones (Letras Pequeñas) -->
+                    <div class="terms-use">
+                        <h5>By signing up, you agree to the <span>Terms of Service</span> and <span>Privacy Policy</span>, including <span>Cookie Use</span>.</h5>
+                    </div>
+
+                    <!-- "Already have an account?" Label -->
+                    <div class="label-acc mb-2">
+                        <h4 class="fs-5">Already have an account?</h4>
+                    </div>
+
+                    <!-- Iniciar Sesión con Apple -->
+                    <div class="rounded-pill py-2 px-3 pt-3 mt-3 iniciar-sesion align-items-center mb-1">
+                        <h3 class="fs-6 ml-3">Sign in</h3>
+                    </div>
                 </div>
-            </div>
         </div>
 
     </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid row align-items-center mt-4 align-self-center">
+        <div class="col column-gap-1 align-items-center">
+            <h5>About</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Help Center</h5>
+        </div>  
+        <div class="col column-gap-1 align-items-center">
+            <h5>Terms of Service</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Privacy Policy</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Cookie Policy</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Accesibility</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Ads info</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Blog</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Status</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Careers</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Brand Resources</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Advertising</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Marketing</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>X for Business</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Developers</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Directory</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>Settings</h5>
+        </div>
+        <div class="col column-gap-1 align-items-center">
+            <h5>2023 X Corp</h5>
+        </div>
+    </footer>
 
 </body>
 </html>
