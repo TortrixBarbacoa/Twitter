@@ -24,6 +24,7 @@ html {
 
 html , body{
   height: 100%;
+  width: 100%;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
 }
@@ -36,8 +37,7 @@ a {
 
 li a{
   list-style: none;
-  font: inherit;
-  color: inherit;
+ 
   color: #fff;
 }
 
@@ -557,6 +557,7 @@ font-weight: 300;
 
  .foryou:hover{
   background-color: #3a3a3a91;
+  font-weight: bold;
 }
 
 .Following:hover{
@@ -634,10 +635,18 @@ font-weight: 300;
   margin-left: auto;
 }
 
+.iconos-post{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5rem;
+  margin-bottom: 0.5rem;
+}
+
 /* post */
 .post__avatar img {
   border-radius: 50%;
   height: 40px;
+  cursor: pointer;
 }
 
 .post {
@@ -670,7 +679,7 @@ font-weight: 300;
 
 span{
   color: #ffffff;
-  font-size: 10px;
+
 }
 
 .post__badge {
