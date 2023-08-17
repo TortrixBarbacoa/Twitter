@@ -152,6 +152,29 @@ footer h5:hover {
     font-weight: bolder;
 }
 
+.label-forg {
+    text-align: start; 
+    font-size: 0.8rem; 
+    font-family: 'Roboto', sans-serif;; 
+    margin-top: -0.5rem;
+}
+
+.label-forg:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.custom-floating-label {
+    color: var(--twittertextgray);
+}
+
+.custom-floating-input:focus + .custom-floating-label,
+.custom-floating-input:not(:placeholder-shown) + .custom-floating-label {
+    color: #000000;
+    border: none;
+}
+
+
 
 
 
