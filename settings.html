@@ -181,126 +181,161 @@
         </div>
       </a>
     </nav>
-    <main class="mainmenu_msg">
-      <div class="flex_msg">
-        <div class="flex-container">
-        <div class="feeds">
-        <h2 style="color:#ffffff">Messages</h2>
-    </div>
-        <div class="feed_icon">
-            <li class="item_msg">
-                <i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i>
-
-              </li>
-              <li class="item_msg">
-                <i class="fa-solid fa-plus fa-lg" style="color: #ffffff;"></i>
-              </li>  
-        </div>
-        </div>
-        <div class="search-flexmsg">
-          <div class="search-barmsg">
-            <div class="search-container">
-              <img src="./assets/search.svg" class="search-icon" />
-              <input type="text" id="searchInput" placeholder="Search Direct Messages" />
+    <main class="mainmenu">
+      <div class="feed-settings">
+        <div class="middle-section">
+            <div class="top-nav">
+                <div class="search-flex">
+                    <h2 style="color:#ffffff"> Settings</h2>
+                    
+                </div>
+                
+                   
             </div>
-          </div>
-        </div>
-          <div class="Mensajes" data-profile-img="assets/coco.png">
-            <div class="Contenido-mensaje">
-            <div class="image">
-              <div class="img-container">
-              <img class="perfil-img" src="assets/coco.png" alt="">
-            </div>
-            </div>
-              <div class="mensajes-flex">
-            <div class="mensaje-h">
-              <div class="Nombre-contenedor">
-              <h3>Mamá Coco</h3>
-            </div>
-              <div class="nickname"><p>@momCoco</p></div>
-              <div class="fecha"><p><time datetime="2023-08-15T12:00:00">·20. Agos. 2023</time></p></div>
-              <!--DEBO CREAR OTRO DIV PARA QUE EL MENSAJE ORIGINAL SE ENCUENTRE DEBAJO DE ESTO ANOTACIÓN ------------------------------------------------------------------------------------------------- -->
-            </div>
-            <div class="chat">
-              <div class="texto-chat">
-                <p>Hola mijito, como estás?</p>
+            <div class="search-flexmsg">
+              <div class="search-barmsg">
+                <div class="search-container">
+                  <img src="./assets/search.svg" class="search-icon" />
+                  <input type="text" id="searchInput" placeholder="Search settings" />
+                </div>
               </div>
+            </div>
+            
+            
+
+            <ul>
+              <li class="nav-item-settings">
+                <a href="settings.html" class="item-link-settings">Your account</a>
+              </li>
+              <li class="nav-item-settings">
+                <a href="monetization.html" class="item-link-settings">
+                  Monetization<span class="arrow"></span>
+                </a>
+              </li>
               
-            </div>
+              
+              <li class="nav-item-settings">
+                <a href="#" class="item-link-settings">Premium</a>
+              </li>
+              <li class="nav-item-settings">
+                <a href="#" class="item-link-settings" id="subs-link">Subscriptions</a>
+              </li>
+              <li class="nav-item-settings">
+                <a href="./lists.html" class="item-link-settings">Security and account access</a>
+              </li>
+              <li class="nav-item-settings">
+                <a href="./bookmarks.html" class="item-link-settings">Privacy and Security</a>
+              </li>
+              <li class="nav-item-settings">
+                <a href="./comunities.html" class="item-link-settings">Notifications</a>
+              </li>
+              <li class="nav-item-settings">
+                <a href="./verified.html" class="item-link-settings">Accessibility, display and lenguage</a>
+              </li>
+              <li class="nav-item-settings">
+                <a href="./profile.html" class="item-link-settings">Aditional resource<span class="arrow"></span></a>
+              </li>
+            </ul>
+            
+             </div>  
+                                 
           </div>
-        </div>
-        </div>
-        <div class="Mensajes" data-profile-img="assets/logo_twitter.jpeg">
-          <div class="Contenido-mensaje">
-          <div class="image">
-            <div class="img-container">
-            <img class="perfil-img" src="assets/logo_twitter.jpeg" alt="">
-          </div>
-          </div>
-            <div class="mensajes-flex">
-          <div class="mensaje-h">
-            <div class="Nombre-contenedor">
-            <h3>Elon Musk</h3>
-          </div>
-            <div class="nickname"><p>@ElonMusk</p></div>
-            <div class="fecha"><p><time datetime="2023-08-15T12:00:00">·10. Julio. 2023</time></p></div>
-            <!--DEBO CREAR OTRO DIV PARA QUE EL MENSAJE ORIGINAL SE ENCUENTRE DEBAJO DE ESTO ANOTACIÓN ------------------------------------------------------------------------------------------------- -->
-          </div>
-          <div class="chat">
-            <div class="texto-chat">
-              <p>Que buena pagina estas haciendo</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="Mensajes" data-profile-img="assets/spider.jpg">
-        <div class="Contenido-mensaje">
-        <div class="image">
-          <div class="img-container">
-          <img class="perfil-img" src="assets/spider.jpg" alt="">
-        </div>
-        </div>
-          <div class="mensajes-flex">
-        <div class="mensaje-h">
-          <div class="Nombre-contenedor">
-          <h3>Spiderman</h3>
-        </div>
-          <div class="nickname"><p>@spiderman</p></div>
-          <div class="fecha"><p><time datetime="2023-08-15T12:00:00">·10. Julio. 2023</time></p></div>
-          <!--DEBO CREAR OTRO DIV PARA QUE EL MENSAJE ORIGINAL SE ENCUENTRE DEBAJO DE ESTO ANOTACIÓN ------------------------------------------------------------------------------------------------- -->
-        </div>
-        <div class="chat">
-          <div class="texto-chat">
-            <p>Qué le dijiste a Maria Juana?</p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-    </div>
-        </div>
-        <div class="Aside-flex">
-          <div class="perfil-container">
-            <img class="perfil-img" id="perfilImg" src="" alt="Perfil">
-          </div>
-          <div class="message-container" id="messageContainer">
-          <div class="contenido-aside" id="messageList">
-            <div class="titulo-contenedor">
-              <h1>Select a message</h1>
-            </div>
-            <div class="m-debajo">
-              <p>Choose from your existing conversations, start a new one, or just keep swimming.</p>
-            </div>
-            <div class="contenedor-boton">
-              <a href="#" class="tweet-btn"><ion-icon name="pencil"></ion-icon>
-                <div class="text">New Message</div>
+          <ul>
+            <!-- ... (otros elementos de configuración) ... -->
+           
+            
+              <br>
+                <h2 style="color: white;">Tu Cuenta</h2>
+                <br>
+                <p style="color: white; font-size: 13px;">Ve la información de la cuenta, descarga un archivo con tus datos u obtén más información acerca de las opciones de desactivación de la cuenta.</p>
+                <!-- ... (detalles y opciones específicas de la cuenta) ... -->
+               <br><br>
+
+                <li class="nav-item-settings">
+              <a href="#" class="item-link-settings">
+                <ion-icon name="person-outline"></ion-icon> <!-- Icono de cuenta -->
+                Your account<span class="arrow"></span>
+                <p style="color: white; font-size: 13px;  text-align: center;">Ve la información de la cuenta, como numero de telefono y la dirección de correo electronico.</p>
               </a>
+              
+            </li>
+           
+            <li class="nav-item-settings">
+              <a href="#" class="item-link-settings">
+                <ion-icon name="lock-closed-outline"></ion-icon> <!-- Icono de candado -->
+                Change your password<span class="arrow"></span>
+                <p style="color: white; font-size: 13px;">Cambia de contraseña en cualquier momento.</p>
+              </a>
+              
+            </li>
+           
+            <li class="nav-item-settings">
+              <a href="#" class="item-link-settings">
+                <ion-icon name="download-outline"></ion-icon> <!-- Icono de descarga -->
+                Download your data<span class="arrow"></span>
+                <p style="color: white; font-size: 13px;">Hazte una idea del tipo de información que se almacena en tu cuenta.</p>
+              </a>
+              
+            </li>
+            
+
+            <li class="nav-item-settings">
+              <a href="#" class="item-link-settings">
+                <ion-icon name="power-outline"></ion-icon> <!-- Icono de encendido/apagado -->
+                Deactivate your account<span class="arrow"></span>
+                <p style="color: white; font-size: 13px; text-align: center;">Averigua como puedes desactivar tu cuenta.</p>
+              </a>
+              
+            </li>
+           
+          </ul>
             </div>
-          </div>
+            
+
+            
+        </ul>
+            
+              
+
+
         </div>
-  </div>
-</main>
+      </div>
+      
+            </div>
+             
+      
+    
+    </main>
+
+
+    <script>
+   document.addEventListener('DOMContentLoaded', function () {
+  const monetizationLink = document.getElementById('monetization-link');
+  const monetizationSection = document.getElementById('monetizationSection');
+
+  monetizationLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+    
+    // Limpia el contenido actual de monetizationSection
+    monetizationSection.innerHTML = '';
+
+    // Crea y agrega el nuevo contenido de monetización
+    const newContent = `
+      <!-- Aquí va el contenido de las nuevas opciones de monetización -->
+      <h3 style="color: white;">Nuevas Opciones de Monetización</h3>
+      <p>¡Aquí puedes agregar tus nuevas opciones de monetización!</p>
+    `;
+
+    // Agrega el nuevo contenido al contenedor de monetización
+    monetizationSection.insertAdjacentHTML('beforeend', newContent);
+  });
+});
+
+
+  
+    </script>
+
+    
 
 
   <!-- overlay for sub item box ------------------------------------------------------------------------------- -->

@@ -1,0 +1,647 @@
+:root {
+    --background: #000;
+    --brandBackground: #1d9bf020;
+    --brandColor: #d9d9d9;
+    --itemBackground: #d9d9d920;
+    --colorPrimary: #d9d9d9;
+    --colorSecondary: #6e767d;
+    --colorWhite: #fff;
+    --tweetBtnBg: #1d9bf0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+    user-select: none;
+  }
+  
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--colorPrimary);
+    font-size: 18px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  body {
+    height: 100vh;
+    background: var(--background);
+    padding: 0 3em;
+  }
+  
+  nav.sidebar {
+    height: 100%;
+    width: 500px;
+    background: var(--background);
+    border-right: 1px solid #fff2;
+    padding: 10px 0px 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    z-index: 100;
+  }
+  
+  .navbar-brand {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 8px 8px 4px 10px;
+    border-radius: 50%;
+  }
+  
+  .navbar-brand:hover {
+    background: var(--brandBackground);
+  }
+  
+  .navbar-brand a {
+    text-decoration: none;
+    color: var(--brandColor);
+  }
+  
+  .navbar-brand a ion-icon {
+    font-size: 30px;
+  }
+  
+  .nav-item {
+    padding: 8px 25px 8px 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .nav-item:hover {
+    background: var(--itemBackground);
+  }
+  
+  .nav-item .item-icon {
+    margin-right: 15px;
+  }
+  
+  .nav-item .item-icon ion-icon {
+    font-size: 26px;
+    --ionicon-stroke-width: 30px;
+  }
+  
+  .nav-item .item-icon.home ion-icon {
+    font-size: 24px;
+  }
+  
+  .nav-item .item-icon.hash {
+    padding: 0 2px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+  
+  a.tweet-btn {
+    display: block;
+    width: 230px;
+    background: var(--tweetBtnBg);
+    color: var(--colorWhite);
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  a.tweet-btn:hover {
+    --tweetBtnBg: #1d9bf0ee;
+  }
+  
+  a.tweet-btn ion-icon {
+    font-size: 20px;
+    color: #fff;
+    display: none;
+  }
+  
+  a.profile-btn {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 14px;
+  }
+  
+  .profile-btn:hover {
+    background: var(--itemBackground);
+  }
+  
+  .profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  img.profile-img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-info .name {
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  
+  .profile-info .username {
+    color: var(--colorSecondary);
+  }
+  
+  .option-icon ion-icon {
+    font-size: 16px;
+    margin-top: 2px;
+  }
+  
+  
+  .sub-items-box {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    background: var(--background);
+    box-shadow: 0 0 10px #fff5;
+    width: 190px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+    z-index: 100;
+  }
+  
+  .sub-items-box.active {
+    display: block;
+  }
+  
+  .sub-item {
+    padding: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .sub-item:hover {
+    background: #15181c;
+  }
+  
+  .sub-item .item-icon {
+    margin-right: 10px;
+  }
+  
+  .sub-item .item-icon ion-icon {
+    font-size: 18px;
+  }
+  
+  .sub-item .item-link {
+    font-size: 14px;
+  }
+  
+  .config {
+    padding-top: 2px;
+    margin-top: 2px;
+    border-top: 1px solid #fff2;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    display: none;
+    z-index: 10;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  
+  .mainmenu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  .mainmenu_msg {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-right: 3px;
+    margin-right: 2rem;
+  
+  }
+  
+  .feed {
+    height: 100%;
+    width: 600px;
+    background: var(--background);
+    border-right: 1px solid #fff2;
+    padding: 10px 0;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .flex_msg {
+    height: 100%;
+    width: 45rem;
+    background: var(--background);
+    border-right: 1px solid #fff2;
+    padding: 10px 0;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Adjust as needed */
+    margin-top: 20px; /* Adjust margin as needed */
+    padding-bottom: 1rem;
+  }
+  
+  .feeds {
+    flex: 1; /* Let the sub-classes take equal width */
+    /* Your other styles here */
+  }
+  .feed_icon{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .aside-left {
+    height: 100%;
+    width: 436px;
+    background: var(--background);
+    border-right: 1px solid #fff2;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .top-nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-flex {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 5rem;
+  }
+  .search_bar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--itemBackground);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: lightgrey;
+    height: 3rem;
+  }
+  
+  .search_bar input {
+    flex: 1;
+    background-color: var(--background-grey);
+    border: none;
+    color: var(--colorPrimary);
+    font-family: "Chirp", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .search-bar {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--itemBackground);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: lightgrey;
+    height: 3rem;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    background-color: var(--background-grey);
+    border: none;
+    color: var(--colorPrimary);
+    font-family: "Chirp", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+  }
+  
+  .search-icon,
+  .setting-icon {
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+  }
+  /*ICONOS INICIO MESSAGE*/
+  .item_msg {
+    padding: 8px 15px 8px 10px;
+    padding-left: 10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+  }
+  .item_msg:hover {
+    background: var(--itemBackground);
+    border-radius: 100%;
+  }
+  
+  .item_msg .item-icon {
+    margin-right: 15px;
+  }
+  /*SEARCH BAR MESSAGE HTML*/
+  .search-flexmsg {
+    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 5rem;
+  }
+  .search_barmsg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--itemBackground);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: lightgrey;
+    height: 3rem;
+  }
+  
+  .search_barmsg input {
+    flex: 1;
+    background-color: var(--background-grey);
+    border: none;
+    color: var(--colorPrimary);
+    font-family: "Chirp", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .search-barmsg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--itemBackground);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: lightgrey;
+    height: 3rem;
+  }
+  
+  .search-barmsg input {
+    flex: 1;
+    background-color: var(--background-grey);
+    border: none;
+    color: var(--colorPrimary);
+    font-family: "Chirp", sans-serif;
+    font-size: 1rem;
+    cursor: text;
+  }
+  
+  .search-barmsg input:focus {
+    outline: none;
+  }
+  
+  .search-icon,
+  .setting-icon {
+    height: 1.2rem;
+    width: 1.2rem;
+    cursor: pointer;
+  }
+  .Mensajes {
+    flex-direction: row;
+    margin-left: -1rem;
+    display: flex;
+    color: white;
+    width: auto;
+    height: 70px;
+    transition: background-color 0.3s; /* Agregamos una transición suave para el cambio de color */
+  
+  }
+  .Mensajes:hover{
+    background-color: rgba(200, 200, 200,0.1); /* Cambiamos el color de fondo con una intensidad media */
+  
+  }
+  .image{
+    padding-right: .4rem;
+    padding-top: .5rem;
+    display: flex;
+    
+  }
+  .image-container{
+    display: flex;
+    padding-right: 3rem;
+    align-items: center;
+    align-content: center;
+  
+  }
+  .perfil-img{
+    border-radius: 100%;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    border: 1px solid rgba(35, 34, 34, 0.742);
+  }
+  .mensaje-h{
+    padding-top: .6rem;
+    padding-left: 1.3rem;
+    display: flex;
+    flex-grow: 1;
+    width: auto;
+  }
+  .Contenido-mensaje {
+    display: flex;
+    padding-left: 2rem;
+    width: auto;
+  }
+  .Nombre-contenedor{
+    display: flex;
+    margin-left: -15px;
+    padding-right: 5px;
+  }
+  .Nombre-contenedor h3 {
+    font-size: 15px ;
+  }
+  .nickname{
+    font-size: 15px;
+    color: #9c9c9c;
+    padding-left: 3px;
+    display: flex;
+    flex-wrap: 1;
+  }
+  .fecha{
+      font-size: 15px;
+      color: #626161;
+      padding-left: 3px;
+      display: flex;
+      flex-wrap: 1;
+  }
+  .chat{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3px; /* Espacio entre mensaje-h y chat */
+    padding-left: .5rem;
+    font-size: 15px;
+    color: #626161;
+  
+  }
+  /*ASIDE MESSAGE*/
+  .Aside-flex{
+    padding-top: 18rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-right: 3px;
+    margin-right: 2rem;
+    color: white;
+    text-align: center;
+    border: 1px solid #fff2;
+  }
+  
+  .titulo-contenedor{
+    width: auto;
+    height: 1rem;
+    padding-left: 9rem;
+  }
+  .titulo-contenedor h1{
+    font-size: 2rem;
+    text-align: left;
+    max-width: 300px; /* Limita el ancho del texto a 100px */
+  }
+  .m-debajo{
+    padding-top: 30px;
+    padding-left: 9rem;
+    text-align: left;
+    max-width: 510px; /* Limita el ancho del texto a 100px */
+    color: #585a5f;
+  }
+  .contenedor-boton{
+    padding-top: 1rem;
+    display: flex;
+    padding-left: 9rem;
+  }
+  .itemsAside{
+    
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    height: 5rem;
+  }
+  .itemsAside2{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    height: 5rem;
+  }
+  
+  .getVerified {
+    flex: 1;
+    display: block;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--itemBackground);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: lightgrey;
+    height: auto;
+  }
+  .getVerified2 {
+    flex: 1;
+    display: block;
+    align-items: center;
+    gap: 0.5rem;
+    width: 400px;
+    margin-bottom: -1rem;
+    background-color: var(--itemBackground);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem 2rem 0 0;
+    color: lightgrey;
+    height: auto;
+  }
+  /*Aside Derecho TRENDS FOR YOU*/
+  .trends{
+    display: block;
+    align-items: center;
+    gap: 0.5rem;
+    width: 400px;
+    background-color: var(--itemBackground);
+    padding: 0.5rem 1rem;
+    border-radius: 0 0 2rem 2rem;
+    color: lightgrey;
+    height: auto;
+  }
+  
+  .trends:hover{
+     background-color: #343536;
+  }
+  
+  .itemsHover h6, h5{
+    margin-top: .5rem;
+    color: var(--colorSecondary);
+  }
+  .trends:nth-child(2){
+    margin-bottom: -1rem;
+    border-radius: 0 0 0 0;
+  }
+  .trends:nth-child(3){
+    margin-bottom: -1rem;
+    border-radius: 0 0 0 0;
+  }
+  
+  .trends:nth-child(4) h5{
+    margin-bottom: 1rem;
+  }
+  
+  .itemsHover h4{
+    margin-top: .5rem;
+    color: #fff;
+  }
+  
+  
