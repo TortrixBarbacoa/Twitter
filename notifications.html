@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications / Twitter</title>
+
+
+  <link rel="shortcut icon" href="./assets/logo_twitter.jpeg" type="image/png">
+
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/notifications.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="mainmenu">
+    <nav class="sidebar">
+      <ul class="navbar">
+        <li class="navbar-brand">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2008/svg" height="1em" viewBox="0 0 512 512">
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./home.html" class="item-icon home">
+            <ion-icon name="home-outline"></ion-icon>
+          </a>
+          <a href="./home.html" class="item-link">Home</a>
+        </li>
+        <li class="nav-item hash">
+          <a href="./explore.html" class="item-icon hash">
+            <ion-icon name="search-outline"></ion-icon>
+          </a>
+          <a href="./explore.html" class="item-link">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a href="./notifications.html" class="item-icon">
+            <ion-icon name="notifications-outline"></ion-icon>
+          </a>
+          <a href="./notifications.html" class="item-link">Notification</a>
+        </li>
+        <li class="nav-item">
+          <a href="./messages.html" class="item-icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+          <a href="./messages.html" class="item-link">Messages</a>
+        </li>
+        <li class="nav-item">
+          <a href="./lists.html" class="item-icon">
+            <ion-icon name="reader-outline"></ion-icon>
+          </a>
+          <a href="./lists.html" class="item-link">Lists</a>
+        </li>
+        <li class="nav-item">
+          <a href="./bookmarks.html" class="item-icon">
+            <ion-icon name="bookmark-outline"></ion-icon>
+          </a>
+          <a href="./bookmarks.html" class="item-link">Bookmarks</a>
+        </li>
+        <li class="nav-item">
+          <a href="./comunities.html" class="item-icon">
+            <ion-icon name="people-outline"></ion-icon>
+          </a>
+          <a href="./comunities.html" class="item-link">Communities</a>
+        </li>
+        <li class="nav-item">
+          <a href="./verified.html" class="item-icon">
+            <!--AQUI VA EL ICONO DE VERIFICADO-->
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M15,19.58A2,2,0,0,1,13.59,19l-3.3-3.29,1.42-1.42L15,17.59l6.29-6.3,1.42,1.42L16.42,19A2,2,0,0,1,15,19.58Z" />
+              <path
+                d="M16.07,28.79a4.2,4.2,0,0,1-3.35-1.65,2.24,2.24,0,0,0-2.1-.84A4.24,4.24,0,0,1,5.8,21.56a2.26,2.26,0,0,0-.88-2.08,4.24,4.24,0,0,1-.06-6.76,2.24,2.24,0,0,0,.84-2.1A4.25,4.25,0,0,1,10.44,5.8a2.25,2.25,0,0,0,2.08-.89,4.22,4.22,0,0,1,3.37-1.7h0a4.2,4.2,0,0,1,3.35,1.65,2.24,2.24,0,0,0,2.1.84h0a4.25,4.25,0,0,1,4.82,4.74,2.26,2.26,0,0,0,.88,2.08,4.24,4.24,0,0,1,.06,6.76,2.24,2.24,0,0,0-.84,2.1,4.24,4.24,0,0,1-4.74,4.82,2.25,2.25,0,0,0-2.08.89,4.22,4.22,0,0,1-3.37,1.7Zm-5.13-4.52a4.25,4.25,0,0,1,3.36,1.65,2.17,2.17,0,0,0,1.79.87,2.19,2.19,0,0,0,1.78-.9,4.24,4.24,0,0,1,3.95-1.67,2.23,2.23,0,0,0,1.88-.65,2.26,2.26,0,0,0,.62-1.9,4.25,4.25,0,0,1,1.6-4,2.24,2.24,0,0,0,0-3.57,4.24,4.24,0,0,1-1.67-3.94,2.24,2.24,0,0,0-2.55-2.51h0a4.22,4.22,0,0,1-4-1.6,2.33,2.33,0,0,0-1.79-.87,2.19,2.19,0,0,0-1.78.9,4.24,4.24,0,0,1-4,1.67,2.23,2.23,0,0,0-1.88.65,2.26,2.26,0,0,0-.62,1.9,4.25,4.25,0,0,1-1.6,4,2.24,2.24,0,0,0,0,3.57,4.24,4.24,0,0,1,1.67,3.94,2.24,2.24,0,0,0,2.55,2.51A4.18,4.18,0,0,1,10.94,24.27ZM21.53,6.69h0Z" />
+            </svg>
+          </a>
+          <a href="./verified.html" class="item-link">Verified</a>
+        </li>
+        <li class="nav-item">
+          <a href="./profile.html" class="item-icon">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+          <a href="./profile.html" class="item-link">Profile</a>
+        </li>
+        <li class="nav-item" id="moreBtn">
+          <a href="#" class="item-icon">
+            <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+          </a>
+          <a href="#" class="item-link">More</a>
+        </li>
+        <a href="#" class="tweet-btn"><ion-icon name="pencil"></ion-icon>
+          <div class="text">Tweet</div>
+        </a>
+
+
+        <div class="sub-items-box">
+          <ul>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Topic</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="flash-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Moments</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="newspaper-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Newsletters</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="megaphone-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Twitter Ads</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="stats-chart-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Analytics</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="film-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Media Studio</a>
+            </li>
+          </ul>
+          <ul class="config">
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="settings-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Settings and privacy</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="help-circle-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Help Center</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="color-palette-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Display</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="accessibility-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Keyboard shortcuts</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------- -->
+      </ul>
+
+      <a href="#" class="profile-btn">
+        <div class="profile-info">
+          <img src="./assets/universidad_del_valle.png" alt="" class="profile-img" width="35" height="35">
+          <div>
+            <p class="name">UVG</p>
+            <p class="username">@uvgcampusur</p>
+          </div>
+        </div>
+        <div class="option-icon">
+          <ion-icon name="ellipsis-horizontal"></ion-icon>
+        </div>
+      </a>
+    </nav>
+    <main class="mainmenu">
+      <div class="feed">
+        <div class="middle-section">
+            <div class="top-nav">
+                <div class="search-flex">
+                    <h2 style="color:#ffffff"> Notifications</h2>
+                    <img src="./assets/setting.svg" class="search-icon"/>
+                </div>
+                <div class="tab">
+                    <button class="tablinks" onclick="switchTabs(event, 'All')" id="defaultOpen">All</button>
+                    <button class="tablinks" onclick="switchTabs(event, 'Verified')" id="defaultOpen">Verified</button>
+                    <button class="tablinks" onclick="switchTabs(event, 'Mentions')" id="defaultOpen">Mentions</button>
+                </div>
+            </div>
+            <div id="All" class="tabcontent">
+                <div class="notification-message">
+                    <img src="./assets/logo_twitter.jpeg" class="logo-twitter" id="openModalButton" />
+                    <p>There was a login to your account @username from a new device on <span id="current-date"></span>. Review it now.</p>
+                </div>
+            </div>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="alert-content">
+                    <img src="./assets/logo_twitter.jpeg" class="logo-twitter-alert"/><br>
+                    <h3 class="title-alert" id="myModal">New login alert</h3><br>
+                    <p class="text-alert">There was a login to your account @username from a new device.
+                       New login Device: Chrome on Windows
+                       Location*: Unknown
+                       When: <span id="current-date-alert"></span> PDT (hace 1 día)
+                       *Location is approximate based on the login's IP address.</p><br>
+                    <p>If this was you •  You can ignore this message. There's no need to take any action.
+                       If this wasn't you •  Change your password now to protect your account. You'll be logged out of all your active X sessions except the one you're using at this time.</p><br>
+                    <div class="btn-alert">
+                       <button class="centered-button">Got it</button>
+                    </div>
+                    </div>
+                </div>
+              </div>
+              <div id="Verified" class="tabcontent"><br>
+                <img src="./assets/verified.png" class="logo-verified"/><br>
+                  <h3 class="title-alert1">Nothing to see here — yet</h3><br>
+                  <p class="text-alert1">
+                    Likes, mentions, Retweets, and a whole lot more — when it comes from a verified account, you’ll find it here. <span><a href="https://help.twitter.com/es/managing-your-account/about-twitter-verified-accounts" target="_blank">Learn more</a></span>
+                  </p>
+              </div>
+              
+              <div id="Mentions" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
+
+              <script>            
+              function switchTabs(event, tabName) {
+                 var i, tabcontent, tablinks;
+              
+                 tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+              
+                 tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+              
+                 document.getElementById(tabName).style.display = "block";
+                event.currentTarget.className += " active";
+              }
+            </script>
+
+            
+            <script>
+               document.getElementById("defaultOpen").click();
+            </script>
+            <script>
+                const currentDateElement = document.getElementById("current-date");
+              
+                function updateCurrentDate() {
+                  const now = new Date();
+                  const months = ["Ene.", "Feb.", "Mar.", "Abr.", "May.", "Jun.", "Jul.", "Ago.", "Sep.", "Oct.", "Nov.", "Dic."];
+                  const formattedDate = now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear();
+                  currentDateElement.textContent = formattedDate;
+                }
+              
+                updateCurrentDate(); 
+              </script>
+                                
+          </div>
+      </div>
+      <div class="aside-left">
+        <div class="top-nav">
+          <div class="search-flex">
+            <div class="search-bar">
+              <img src="./assets/search.svg" class="search-icon" />
+              <input type="text" placeholder="Search" />
+            </div>
+          </div>
+          <div class="itemsAside2">
+            <div class="getVerified2">
+              <h2 style="color:#ffffff">Trends for you</h2>
+            </div>
+            <div class="trends">
+              <div class="itemsHover">
+                <div>
+                  <h6>Only on Twitter · Trending</h6>
+                  <h4>#EleccionesGT2023</h4>
+                  <h5>9,000 post</h5>
+                </div>
+              </div>
+            </div>
+            <div class="trends">
+              <div class="itemsHover">
+                <div>
+                  <h6>Only on Twitter · Trending</h6>
+                  <h4>#ForoPresidenciables</h4>
+                  <h5>10,580 post</h5>
+                </div>
+              </div>
+            </div>
+            <div class="trends">
+              <div class="itemsHover">
+                <div>
+                  <h6>Only on Twitter · Trending</h6>
+                  <h4>#EleccionesGT2023</h4>
+                  <h5>9,000 post</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+
+  <!-- overlay for sub item box ------------------------------------------------------------------------------- -->
+  <div class="overlay"></div>
+  <!-- ------------------------------------------------------------------------------------------------- -->
+
+
+  <!-- custom script -->
+  <script>
+    const moreBtn = document.querySelector('#moreBtn');
+    const subItemsBox = document.querySelector('.sub-items-box');
+    const overlay = document.querySelector('.overlay')
+
+    moreBtn.addEventListener('click', function () {
+      subItemsBox.classList.add('active');
+      overlay.classList.add('active');
+    });
+
+    overlay.addEventListener('click', function () {
+      subItemsBox.classList.remove('active');
+      overlay.classList.remove('active');
+    })
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const modal = document.getElementById("myModal");
+    const openModalButton = document.getElementById("openModalButton");
+    const closeModalButton = document.querySelector(".close");
+
+    openModalButton.addEventListener("click", function() {
+        modal.style.display = "block";
+    });
+
+    closeModalButton.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+        modal.style.display = "none";
+        }
+    });
+    });
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const currentDateElement = document.getElementById("current-date-alert");
+    
+    const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', hour12: true };
+    const currentDateTime = new Date().toLocaleString('en-US', options);
+    
+    currentDateElement.textContent = currentDateTime;
+    });
+  </script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
