@@ -17,6 +17,7 @@
 .login-alt {
     background-color: var(--twitterloginalt);
     color: black;
+    width: 20rem;
 } /* Fondo del botón de Login con Google y Login con Apple */
 
 .login-alt i {
@@ -27,6 +28,21 @@
     cursor: pointer;
 } /* Efecto de transición al pasar el mouse por encima del botón de Login con Google y Login con Apple */
 
+.login-alt-modal {
+    background-color: var(--twitterloginalt);
+    color: black;
+    width: 100%;
+} /* Fondo del botón de Login con Google y Login con Apple */
+
+.login-alt-modal {
+    margin-right: 12px;
+} /* Icono de Google y Apple */
+
+.login-alt-modal:hover {
+    cursor: pointer;
+} /* Efecto de transición al pasar el mouse por encima del botón de Login con Google y Login con Apple */
+
+
 .logo-google {
     width: 1.2rem;
     height: auto;
@@ -35,6 +51,7 @@
 
 .login-twitter {
     background-color: var(--twitterblue);
+    width: 20rem;
 } /* Fondo del botón de Login de Twitter */
 
 .login-twitter:hover {
@@ -43,6 +60,9 @@
     transition: 0.5s;
 } /* Efecto de transición al pasar el mouse por encima del botón de Login Twitter */
 
+.terms-use {
+    width: 20rem;
+}
 .terms-use span {
     color: var(--twitterblue)
 } /* Letras pequeñas debajo del botón para crear una cuenta */
@@ -55,6 +75,7 @@
 .label-acc {
     text-align: start;
     margin-top: 4rem;
+    width: 20rem;
 } /* Estilo del texto de la etiqueta de la cuenta */
 
 .iniciar-sesion {
@@ -63,6 +84,7 @@
     border-style: solid;
     border-color: var(--twitterborder);
     border-width: 0.1rem;
+    width: 20rem;
 } /* Estilo del botón de Iniciar Sesión */
 
 .iniciar-sesion:hover {
@@ -119,6 +141,17 @@ footer h5:hover {
 .iniciar-sesion h3 {
     color: var(--twitterblue);
 } /* Estilo del texto del botón de Iniciar Sesión */
+
+.label-inicio {
+    text-align: start;
+}
+
+.label-inicio h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
 
 
 
