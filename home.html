@@ -11,12 +11,12 @@
   <link rel="shortcut icon" href="./assets/logo_twitter.jpeg" type="image/png">
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/login2.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-  
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
 <body>
@@ -196,8 +196,8 @@
         <div class="feed__header">
         <div><h2 >Home</h2>
           <div class="feed-header-1">
-          <div class="foryou"><a href="home.html" class="select"><h3 style="color: #ffffff; font-weight: bold;">For you</h3></a></div>
-          <div class="Following"><h3>Following</h3></div>
+          <div class="foryou" style="border-bottom: #19b3f5 solid; border-bottom-width: 0.2rem;"><a href="home.html" class="select"><h3 style="color: #ffffff; font-weight: bold;">For you</h3></a></div>
+          <div class="Following"><a href="following.html"><h3>Following</h3></a></div>
         </div>
       </div>
         </div>
@@ -222,13 +222,19 @@
               </div>
             </div>
             <div class="iconos-post">
+              <div>
               <span><i class="fa-regular fa-image" style="color: #19b3f5;"></i></span>
               <span><i class="fa-solid fa-file-video" style="color: #24abff;"></i></span>
               <span><i class="fa-solid fa-list" style="color: #19b3f5"></i></span>
               <span><i class="fa-regular fa-face-smile" style="color: #19b3f5;"></i></span>
               <span><i class="fa-regular fa-calendar" style="color: #19b3f5;"></i></span>
               <span><i class="fa-solid fa-location-dot" style="color: #19b3f5;"></i></span>
-
+            </div>
+            <a href="#" class="tweet-btn"
+                style="width: 4.2rem; height: 2.2rem; display: flex; flex-direction: column; justify-content: space-between;"><ion-icon
+                  name="pencil"></ion-icon>
+                <div style="margin-top: -.45rem;">Post</div>
+              </a>
             </div>
             <!-- <div><button class="tweetBox__tweetButton">Post</button></div> -->
             
@@ -241,7 +247,7 @@
         <div class="post">
           <div class="post__avatar">
             <img
-              src="assets/universidad_del_valle.png"
+              src="assets/perrito4.jpg"
               alt=""
             />
             <div class="vista-perfil"></div>
@@ -251,8 +257,8 @@
             <div class="post__header">
               <div class="post__headerText">
                 <h3 style="color:#ffffff;">
-                  Universidad del valle
-                  <span class="post__headerSpecial"><span class="material-icons post__badge"> </span>@uvgcampusur</span
+                  perritos <i class="bi bi-patch-check-fill" style="color: #1faad8;"></i>
+                  <span class="post__headerSpecial"><span class="material-icons post__badge"> </span>@perritos</span
                   >
                 </h3>
               </div>
@@ -265,7 +271,7 @@
               alt=""
             />
             <div class="post__footer">
-              <span><i class="fa-regular fa-comment" style="color: #ffffff;"></i> 97</span>
+              <span><i class="fa-regular fa-comment icono1" style="color: #ffffff;"></i> 97</span>
               <span><i class="fa-solid fa-retweet" style="color: #ffffff;"></i> 5 </span>
               <span class="material-icons"><i class="fa-regular fa-heart" style="color: #ffffff;"></i> 11.5k </span>
               <span class="material-icons"><i class="fa-solid fa-signal" style="color: #ffffff;"></i> 11.5k </span>
@@ -303,7 +309,7 @@
               alt=""
             />
             <div class="post__footer">
-              <span><i class="fa-regular fa-comment" style="color: #ffffff;"></i> 97</span>
+              <span><i class="fa-regular fa-comment icono1" style="color: #ffffff;"></i> 97</span>
               <span><i class="fa-solid fa-retweet" style="color: #ffffff;"></i> 5 </span>
               <span class="material-icons"><i class="fa-regular fa-heart" style="color: #ffffff;"></i> 11.5k </span>
               <span class="material-icons"><i class="fa-solid fa-signal" style="color: #ffffff;"></i> 11.5k </span>
@@ -317,7 +323,7 @@
         <div class="post">
           <div class="post__avatar">
             <img
-              src="assets/universidad_del_valle.png"
+              src="assets/foto4.png"
               alt=""
             />
           </div>
@@ -326,9 +332,9 @@
             <div class="post__header">
               <div class="post__headerText">
                 <h3 style="color: #ffffff;">
-                  Universidad del Valle
+                  Paisajes
                   <span class="post__headerSpecial"
-                    ><span class="material-icons post__badge"></span>@uvgcampusur</span
+                    ><span class="material-icons post__badge"></span>@fondos</span
                   >
                 </h3>
               </div>
@@ -337,11 +343,11 @@
               </div>
             </div>
             <img
-              src="assets/perrito3.jpg"
+              src="assets/foto2.jpg"
               alt=""
             />
             <div class="post__footer">
-              <span><i class="fa-regular fa-comment" style="color: #ffffff;"></i> 97</span>
+              <span><i class="fa-regular fa-comment icono1" style="color: #ffffff;"></i> 97</span>
               <span><i class="fa-solid fa-retweet" style="color: #ffffff;"></i> 5 </span>
               <span class="material-icons"><i class="fa-regular fa-heart" style="color: #ffffff;"></i> 11.5k </span>
               <span class="material-icons"><i class="fa-solid fa-signal" style="color: #ffffff;"></i> 11.5k </span>
@@ -380,7 +386,7 @@
               alt=""
             />
             <div class="post__footer">
-              <span><i class="fa-regular fa-comment" style="color: #ffffff;"></i> 97</span>
+              <span><i class="fa-regular fa-comment icono1" style="color: #ffffff;"></i> 97</span>
               <span><i class="fa-solid fa-retweet" style="color: #ffffff;"></i> 5 </span>
               <span class="material-icons"><i class="fa-regular fa-heart" style="color: #ffffff;"></i> 11.5k </span>
               <span class="material-icons"><i class="fa-solid fa-signal" style="color: #ffffff;"></i> 11.5k </span>
@@ -418,7 +424,7 @@
               alt=""
             />
             <div class="post__footer">
-              <span><i class="fa-regular fa-comment" style="color: #ffffff;"></i> 97</span>
+              <span><i class="fa-regular fa-comment icono1" style="color: #ffffff;"></i> 97</span>
               <span><i class="fa-solid fa-retweet" style="color: #ffffff;"></i> 5 </span>
               <span class="material-icons"><i class="fa-regular fa-heart" style="color: #ffffff;"></i> 11.5k </span>
               <span class="material-icons"><i class="fa-solid fa-signal" style="color: #ffffff;"></i> 11.5k </span>
@@ -456,7 +462,7 @@
               alt=""
             />
             <div class="post__footer">
-              <span><i class="fa-regular fa-comment" style="color: #ffffff;"></i> 97</span>
+              <span><i class="fa-regular fa-comment icono1 " style="color: #ffffff;"></i> 97</span>
               <span><i class="fa-solid fa-retweet" style="color: #ffffff;"></i> 5 </span>
               <span class="material-icons"><i class="fa-regular fa-heart" style="color: #ffffff;"></i> 11.5k </span>
               <span class="material-icons"><i class="fa-solid fa-signal" style="color: #ffffff;"></i> 11.5k </span>
@@ -493,7 +499,7 @@
               alt=""
             />
             <div class="post__footer">
-              <span><i class="fa-regular fa-comment" style="color: #ffffff;"></i> 97</span>
+              <span><i class="fa-regular fa-comment icono1" style="color: #ffffff;"></i> 97</span>
               <span><i class="fa-solid fa-retweet" style="color: #ffffff;"></i> 5 </span>
               <span class="material-icons"><i class="fa-regular fa-heart" style="color: #ffffff;"></i> 11.5k </span>
               <span class="material-icons"><i class="fa-solid fa-signal" style="color: #ffffff;"></i> 11.5k </span>
@@ -586,7 +592,7 @@
     })
 
   </script>
-  <script src="assets/js/ampliarImg.js"></script>
+  <script src="assets/js/home.js"></script>
 
   <!-- ionicon link -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
