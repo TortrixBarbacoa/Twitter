@@ -507,9 +507,8 @@ p{
   font: inherit;
   color: rgb(204, 205, 205);
  
-
-
 }
+
 
 .feed__header.hidden {
   background-color: transparent; /* Color de fondo transparente al desvanecer */
@@ -518,6 +517,7 @@ p{
 .feed-header-1{
   display: flex;
   width: 600px;
+  
   /* scroll-padding: 0px 40px; */
   position: relative;
   justify-content: space-between;

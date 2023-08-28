@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore / X</title>
+
+
+  <link rel="shortcut icon" href="./assets/logo_twitter.jpeg" type="image/png">
+  <link rel="stylesheet" href="./css/explorer.css">
+  <link href="https://kit.fontawesome.com/a076d05399.js" cro  ssorigin="anonymous"></link>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f8612a333a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="mainmenu_msg">
+    <nav class="sidebar">
+      <ul class="navbar">
+        <li class="navbar-brand">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2008/svg" height="1em" viewBox="0 0 512 512">
+              <style>
+                svg {
+                  fill: #ffffff
+                }
+              </style>
+              <path
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+            </svg>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="./home.html" class="item-icon home">
+            <ion-icon name="home-outline"></ion-icon>
+          </a>
+          <a href="./home.html" class="item-link">Home</a>
+        </li>
+        <li class="nav-item hash">
+          <a href="./explore.html" class="item-icon hash">
+            <ion-icon name="search-outline"></ion-icon>
+          </a>
+          <a href="./explore.html" class="item-link">Explore</a>
+        </li>
+        <li class="nav-item">
+          <a href="./notifications.html" class="item-icon">
+            <ion-icon name="notifications-outline"></ion-icon>
+          </a>
+          <a href="./notifications.html" class="item-link">Notification</a>
+        </li>
+        <li class="nav-item">
+          <a href="./messages.html" class="item-icon">
+            <ion-icon name="mail-outline"></ion-icon>
+          </a>
+          <a href="./messages.html" class="item-link">Messages</a>
+        </li>
+        <li class="nav-item">
+          <a href="./lists.html" class="item-icon">
+            <ion-icon name="reader-outline"></ion-icon>
+          </a>
+          <a href="./lists.html" class="item-link">Lists</a>
+        </li>
+        <li class="nav-item">
+          <a href="./bookmarks.html" class="item-icon">
+            <ion-icon name="bookmark-outline"></ion-icon>
+          </a>
+          <a href="./bookmarks.html" class="item-link">Bookmarks</a>
+        </li>
+        <li class="nav-item">
+          <a href="./comunities.html" class="item-icon">
+            <ion-icon name="people-outline"></ion-icon>
+          </a>
+          <a href="./comunities.html" class="item-link">Communities</a>
+        </li>
+        <li class="nav-item">
+          <a href="./verified.html" class="item-icon">
+            <!--AQUI VA EL ICONO DE VERIFICADO-->
+            <ion-icon class="fas fa-check-circle"></ion-icon>
+          <a href="./verified.html" class="item-link">Verified</a>
+        </li>
+        <li class="nav-item">
+          <a href="./profile.html" class="item-icon">
+            <ion-icon name="person-outline"></ion-icon>
+          </a>
+          <a href="./profile.html" class="item-link">Profile</a>
+        </li>
+        <li class="nav-item" id="moreBtn">
+          <a href="#" class="item-icon">
+            <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>
+          </a>
+          <a href="#" class="item-link">More</a>
+        </li>
+        <a href="#" class="tweet-btn"><ion-icon name="pencil"></ion-icon>
+          <div class="text">Tweet</div>
+        </a>
+
+
+        <div class="sub-items-box">
+          <ul>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Topic</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="flash-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Moments</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="newspaper-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Newsletters</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="megaphone-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Twitter Ads</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="stats-chart-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Analytics</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="film-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Media Studio</a>
+            </li>
+          </ul>
+          <ul class="config">
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="settings-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Settings and privacy</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="help-circle-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Help Center</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="color-palette-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Display</a>
+            </li>
+            <li class="sub-item">
+              <a href="#" class="item-icon">
+                <ion-icon name="accessibility-outline"></ion-icon>
+              </a>
+              <a href="#" class="item-link">Keyboard shortcuts</a>
+            </li>
+          </ul>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------- -->
+
+      </ul>
+
+      <a href="#" class="profile-btn">
+        <div class="profile-info">
+          <img src="./assets/universidad_del_valle.png" alt="" class="profile-img" width="35" height="35">
+          <div>
+            <p class="name">UVG</p>
+            <p class="username">@uvgcampusur</p>
+          </div>
+        </div>
+        <div class="option-icon">
+          <ion-icon name="ellipsis-horizontal"></ion-icon>
+        </div>
+      </a>
+    </nav>
+    <main class="mainmenu_msg">
+      <div class="flex_msg">
+        
+        <div class="search-flexmsg">
+          <div class="search-barmsg">
+            <div class="search-container">
+              <img src="./assets/search.svg" class="search-icon" />
+              <input type="text" id="searchInput" placeholder="Search" />
+            </div>
+          </div>
+          <li class="item_msg">
+            <i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i>
+          </li>
+        </div>
+        <div class="feeds">
+            <h2 style="color:#ffffff">Trends for you    </h2>
+        </div>
+        <div class="Mensajes">
+
+            <div class="Contenido-mensaje">
+              <div class="mensajes-flex">
+            <div class="chat">
+              <div class="texto-chat">
+                <p>Trending in Guatemala</p>
+              </div>
+            </div>
+            <div class="mensaje-h">
+                <div class="Nombre-contenedor">
+                  <div class="texto-chat">
+                      <p>Cash Luna</p>
+                    </div>
+              </div>
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="Mensajes">
+
+            <div class="Contenido-mensaje">
+              <div class="mensajes-flex">
+            <div class="chat">
+              <div class="texto-chat">
+                <p>Trending in Adult Animation</p>
+              </div>
+            </div>
+            <div class="mensaje-h">
+                <div class="Nombre-contenedor">
+                  <div class="texto-chat">
+                      <p>Finn</p>
+                    </div>
+              </div>
+                </div>
+                <div class="footer-chat">
+                    <div class="texto-chat">
+                      <p>16.2k posts</p>
+                    </div>
+                  </div>
+          </div>
+        </div>
+        </div>
+        <div class="Mensajes">
+
+            <div class="Contenido-mensaje">
+              <div class="mensajes-flex">
+            <div class="chat">
+              <div class="texto-chat">
+                <p>Trending in Guatemala</p>
+              </div>
+            </div>
+            <div class="mensaje-h">
+                <div class="Nombre-contenedor">
+                  <div class="texto-chat">
+                      <p>USAC</p>
+                    </div>
+              </div>
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="Mensajes">
+
+            <div class="Contenido-mensaje">
+              <div class="mensajes-flex">
+            <div class="chat">
+              <div class="texto-chat">
+                <p>Trending in Guatemala</p>
+              </div>
+            </div>
+            <div class="mensaje-h">
+                <div class="Nombre-contenedor">
+                  <div class="texto-chat">
+                      <p>Edgar Chin</p>
+                    </div>
+              </div>
+                </div>
+          </div>
+        </div>
+        </div>
+        <div class="Mensajes">
+
+            <div class="Contenido-mensaje">
+              <div class="mensajes-flex">
+            <div class="chat">
+              <div class="texto-chat">
+                <p>Trending in Adult Animation</p>
+              </div>
+            </div>
+            <div class="mensaje-h">
+                <div class="Nombre-contenedor">
+                  <div class="texto-chat">
+                      <p>#AREVALO PRESIDENTE</p>
+                    </div>
+              </div>
+                </div>
+                <div class="footer-chat">
+                    <div class="texto-chat">
+                      <p>10.1k posts</p>
+                    </div>
+                  </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="Mensajes-show">
+
+            <div class="Contenido-mensaje">
+              <div class="mensajes-flex">
+            <div class="mensaje-h">
+                <div class="Nombre-contenedor">
+                  <div class="texto-show">
+                      <p>Show More</p>
+                    </div>
+              </div>
+                </div>
+          </div>
+        </div>
+        </div>
+                  
+        </div>
+        <div class="itemsAside2">
+            <div class="trends-follow">
+                <h2 class="titulo-follow" style="color:#ffffff">Who to follow</h2>  
+            </div>
+
+            <div class="trends">
+                <div class="itemsHover">
+                  <div class="Contenido-follow">
+                      <div class="image">
+                        <div class="img-container">
+                        <img class="perfil-img" src="assets/coco.png" alt="">
+                      </div>
+                      </div>
+                        <div class="mensajes-flex">
+                      <div class="mensaje-f">
+                        <div class="Nombre-contenedor-f">
+                        <h3>Mamá Coco</h3>
+                      </div>
+                        <div class="nickname-follow"><p>@túmadrecoco</p></div>
+                        <!--DEBO CREAR OTRO DIV PARA QUE EL MENSAJE ORIGINAL SE ENCUENTRE DEBAJO DE ESTO ANOTACIÓN ------------------------------------------------------------------------------------------------- -->
+                      </div>
+                    </div>
+                    <a href="#" class="follow-btn">
+                        <div class="text">Follow</div>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            <div class="trends">
+              <div class="itemsHover">
+                <div class="Contenido-follow">
+                    <div class="image">
+                      <div class="img-container">
+                      <img class="perfil-img" src="assets/google.png" alt="">
+                    </div>
+                    </div>
+                      <div class="mensajes-flex">
+                    <div class="mensaje-f">
+                      <div class="Nombre-contenedor-f">
+                      <h3>Google</h3>
+                    </div>
+                      <div class="nickname-follow"><p>@GoogleDev</p></div>
+                      <!--DEBO CREAR OTRO DIV PARA QUE EL MENSAJE ORIGINAL SE ENCUENTRE DEBAJO DE ESTO ANOTACIÓN ------------------------------------------------------------------------------------------------- -->
+                    </div>
+                  </div>
+                  <a href="#" class="follow-btn2">
+                    <div class="text">Follow</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="trends-dif">
+                <div class="itemsHover">
+                  <div class="Contenido-follow">
+                      <div class="image">
+                        <div class="img-container">
+                        <img class="perfil-img" src="assets/logo_twitter.jpeg" alt="">
+                      </div>
+                      </div>
+                        <div class="mensajes-flex">
+                      <div class="mensaje-f">
+                        <div class="Nombre-contenedor-f">
+                        <h3>Twitter</h3>
+                      </div>
+                        <div class="nickname-follow"><p>@twitter</p></div>
+                        <!--DEBO CREAR OTRO DIV PARA QUE EL MENSAJE ORIGINAL SE ENCUENTRE DEBAJO DE ESTO ANOTACIÓN ------------------------------------------------------------------------------------------------- -->
+                      </div>
+                    </div>
+                    <a href="#" class="follow-btn3">
+                        <div class="text">Follow</div>
+                      </a>
+              
+                  </div>
+                </div>
+              </div>
+
+              <div class="trends-finish">
+                <h2 class="titulo-follow">Show More</h2>  
+            </div>
+
+          </div>
+      </div>
+    </div>
+    </div>
+        </div>
+</main>
+
+
+  <!-- overlay for sub item box ------------------------------------------------------------------------------- -->
+  <div class="overlay"></div>
+  <!-- ------------------------------------------------------------------------------------------------- -->
+
+
+  <!-- custom script -->
+  <script>
+    const moreBtn = document.querySelector('#moreBtn');
+    const subItemsBox = document.querySelector('.sub-items-box');
+    const overlay = document.querySelector('.overlay')
+
+    moreBtn.addEventListener('click', function () {
+      subItemsBox.classList.add('active');
+      overlay.classList.add('active');
+    });
+
+    overlay.addEventListener('click', function () {
+      subItemsBox.classList.remove('active');
+      overlay.classList.remove('active');
+    })
+
+    
+
+  </script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

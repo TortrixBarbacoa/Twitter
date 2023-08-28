@@ -166,6 +166,57 @@ a.tweet-btn {
   font-weight: bold;
 }
 
+a.follow-btn {
+  display: block;
+  width: 100px;
+  background-color: white;
+  color: var(--colorWhite);
+  text-align: center;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  height: 35px;
+  align-items: end;
+  margin-left: 6rem;
+  color: black;
+}
+a.follow-btn2 {
+  display: block;
+  width: 100px;
+  background-color: white;
+  color: var(--colorWhite);
+  text-align: center;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  height: 35px;
+  align-items: end;
+  margin-left: 6rem;
+  color: black;
+  margin-left: 110px;
+}
+a.follow-btn3 {
+  display: block;
+  width: 100px;
+  background-color: white;
+  color: var(--colorWhite);
+  text-align: center;
+  padding: 8px;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: bold;
+  height: 35px;
+  align-items: end;
+  margin-left: 6rem;
+  color: black;
+  margin-left: 140px;
+}
+
 a.tweet-btn:hover {
   --tweetBtnBg: #1d9bf0ee;
 }
@@ -528,14 +579,38 @@ img.profile-img {
   display: flex;
   color: white;
   width: auto;
-  height: 70px;
+  height: 80px;
   transition: background-color 0.3s; /* Agregamos una transición suave para el cambio de color */
 
 }
+
+.Mensajes-show {
+  flex-direction: row;
+  margin-left: -1rem;
+  display: flex;
+  color: white;
+  width: auto;
+  height: 60px;
+  transition: background-color 0.3s; /* Agregamos una transición suave para el cambio de color */
+  
+}
+.Mensajes-show:hover{
+  background-color: rgba(200, 200, 200,0.1); /* Cambiamos el color de fondo con una intensidad media */
+
+}
+.Mensajes :nth-child(2){
+  margin-bottom: 10px;
+}
+
 .Mensajes:hover{
   background-color: rgba(200, 200, 200,0.1); /* Cambiamos el color de fondo con una intensidad media */
 
 }
+.texto-show{
+  color: rgb(58, 105, 182);
+  font-weight: normal;
+}
+
 .image{
   padding-right: .4rem;
   padding-top: .5rem;
@@ -559,20 +634,48 @@ img.profile-img {
 }
 .mensaje-h{
   padding-top: .6rem;
-  padding-left: 1.3rem;
+  padding-left: 1.5rem;
   display: flex;
   flex-grow: 1;
   width: auto;
+  font-weight: bold;
+}
+.mensaje-f{
+  padding-top: .6rem;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-grow: 1;
+  width: auto;
+  font-weight: bold;
+  flex-direction: column;
 }
 .Contenido-mensaje {
   display: flex;
-  padding-left: 2rem;
+  padding-left: 1rem;
   width: auto;
+  margin-bottom: 5px;
+}
+.Contenido-follow {
+  display: flex;
+  width: auto;
+  margin-bottom: 5px;
+}
+.titulo-follow{
+  text-align: start;
+  font-size: 15px;;
 }
 .Nombre-contenedor{
   display: flex;
   margin-left: -15px;
   padding-right: 5px;
+  margin-bottom: -6px;
+}
+.Nombre-contenedor-f{
+  display: flex;
+  margin-left: -15px;
+  padding-right: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
 }
 .Nombre-contenedor h3 {
   font-size: 15px ;
@@ -583,6 +686,14 @@ img.profile-img {
   padding-left: 3px;
   display: flex;
   flex-wrap: 1;
+  
+}
+.nickname-follow{
+  font-size: 15px;
+  color: #9c9c9c;
+  padding-left: 3px;
+  display: flex;
+  margin-left: -17px;
 }
 .fecha{
     font-size: 15px;
@@ -592,13 +703,25 @@ img.profile-img {
     flex-wrap: 1;
 }
 .chat{
+  padding-left: 1rem;
   display: flex;
   flex-direction: row;
   margin-top: 3px; /* Espacio entre mensaje-h y chat */
   padding-left: .5rem;
-  font-size: 15px;
+  font-size: 14px;
   color: #626161;
-
+  margin-bottom: -7px;
+  padding-bottom: 5px;
+}
+.footer-chat {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1px; /* Espacio entre mensaje-h y chat */
+    padding-left: .5rem;
+    font-size: 14px;
+    color: #626161;
+    padding-bottom: 5px;
 }
 /*ASIDE MESSAGE*/
 .Aside-flex{
@@ -650,7 +773,7 @@ img.profile-img {
   padding-left: 9rem;
 }
 .itemsAside{
-  
+  color: lightgrey;
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -748,10 +871,56 @@ img.profile-img {
   color: lightgrey;
   height: auto;
 }
+.trends-dif{
+  display: block;
+  align-items: center;
+  gap: 0.5rem;
+  width: 400px;
+  background-color: var(--itemBackground);
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 2rem 2rem;
+  color: lightgrey;
+  height: auto;
+  padding-bottom: 3rem;
+}
 
+.trends-dif:hover{
+  background-color: #343536;
+}
 .trends:hover{
    background-color: #343536;
 }
+.trends-follow{
+  display: block;
+  align-items: center;
+  gap: 0.5rem;
+  width: 400px;
+  background-color: var(--itemBackground);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+  color: lightgrey;
+  height: auto;
+  margin-bottom: -20px;
+  font-size: 15px;
+  padding-bottom: 1rem;
+}
+
+.trends-finish{
+    display: block;
+    align-items: center;
+    gap: 0.5rem;
+    width: 400px;
+    background-color: var(--itemBackground);
+    padding: 0.5rem 1rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+    color: rgb(58, 105, 182);
+    height: auto;
+    margin-top: -50px;
+    font-size: 15px;
+    padding-bottom: 1rem;
+
+}
+
 
 .itemsHover h6, h5{
   margin-top: .5rem;
